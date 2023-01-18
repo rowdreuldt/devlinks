@@ -34,9 +34,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O DevLinks é uma Landing Page inspirada no Linktree, para que alguém possa reunir seus links e informações importantes.
 
-## 🔖 Layout
+## 🔖 Aprendizados
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/J1Z33MISC22YZB8wfxiIns/NLW-Copa-Explorer/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Neste projeto, aprendi todas as tecnologias acima em um nível básico.
+
 
 ## :memo: Licença
 
