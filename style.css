@@ -63,7 +63,8 @@ padding: 24px;
   height: 112px;
   border-radius: 66px;
   border: 2px solid var(--text-color);
-  size: contain;
+  object-fit: cover;
+  object-position: -5px;
   margin: 0 auto 0 auto;
 }
 

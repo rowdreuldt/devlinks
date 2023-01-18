@@ -13,6 +13,7 @@ function toggleMode() {
 
   // se tiver o light mode, adicionar a imagem light
 
+  /*
   if(html.classList.contains('light')) {
     img.setAttribute("src", "./assets/profile-light.jpg")
     img.setAttribute("alt", "Foto de Perfil do Criador Light")
@@ -21,5 +22,6 @@ function toggleMode() {
     // se tiver sem light mode, manter a imagem normal
     img.setAttribute("src", "./assets/pedroerthal_AS.png")
     img.setAttribute("alt", "Foto de Perfil do Criador Dark")
-  }
+  } */
+  
   }
