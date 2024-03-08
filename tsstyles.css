@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background: #1a1a1a; /* Tom escuro para o background */
+    color: whitesmoke; /* Cor do texto */
+    font-size: 18px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+}
+
+.video-container {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    width: 80%; /* Faz o vídeo ocupar a largura da janela de visualização */
+    height: 85%; /* Faz o vídeo ocupar a altura da janela de visualização */
+    object-fit: cover; /* Garante que o vídeo cubra todo o espaço sem perder a proporção */
+}
+
+.thought-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: #333; /* Botão com um tom mais claro de escuro */
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.content-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.top-content, .bottom-content {
+    flex: 1;
+    background: transparent; /* Fundo transparente para os contêineres de conteúdo */
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.current, .principles {
+    width: calc(50% - 15px);
+}
+
+/* Outros estilos permanecem inalterados */
+
+.past-work {
+    list-style: none;
+    padding-left: 0; /* Remove o padding esquerdo padrão da lista */
+    margin-top: 0; /* Remove a margem superior da lista, se necessário */
+    padding-top: 0; /* Garante que não há padding no topo da lista */
+}
+
+.past-work h2 {
+    padding-left: 0; /* Certifica que não há padding esquerdo no título */
+    margin-top: 0; /* Remove a margem superior do título, se necessário */
+    padding-top: 24px; /* Ajusta o padding superior do título para alinhar com os itens da lista */
+}
+
+/* Regras para os itens da lista fornecidas por você */
+.past-work li {
+    display: flex;
+    align-items: center;
+    padding: 24px 8px; /* Mantém o padding superior e inferior dos itens da lista */
+}
+
+.past-work li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Faz a imagem ser redonda */
+    margin-right: 10px;
+}
+
+.past-work li a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.past-work li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um leve destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave para um efeito de profundidade */
+    transform: translateY(-2px); /* Leve elevação do item */
+    transition: all 0.3s ease; /* Efeito de transição suave para hover */
+    border-radius: 12px;
+}
+
+
+.past-work li span {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .current, .principles, .video-container {
+        width: 100%;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .thought-button {
+        position: static;
+        width: 100%;
+        margin: 20px 0;
+        transform: none;
+    }
+
+    .video-container video {
+        width: auto; /* Ajuste para que o vídeo não exceda a largura em dispositivos móveis */
+        height: auto;
+        max-height: 50vh; /* Ajuste de altura máxima para dispositivos móveis */
+    }
+}

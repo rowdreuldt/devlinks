@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomaz Stanislauki</title>
+    <link rel="stylesheet" href="tsstyles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    const videoElement = document.getElementById('videoElement');
+
+    // Defina X e Y como os segundos desejados para o início e fim do loop
+    const startSecond = 40; // por exemplo, 10
+    const endSecond = 65; // por exemplo, 20
+
+    videoElement.currentTime = startSecond; // Começa o vídeo no segundo X
+
+    // Função para verificar se o vídeo atingiu o segundo Y e reiniciar
+    videoElement.ontimeupdate = function() {
+        if (videoElement.currentTime >= endSecond) {
+            videoElement.currentTime = startSecond;
+            videoElement.play();
+        }
+    };
+
+    videoElement.play(); // Inicia o vídeo
+});
+    </script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="video-container">
+            <video id="videoElement" autoplay muted loop>
+                <source src="https://assets-global.website-files.com/65a2dfaab57dbdb133620e75/65a346626841a21a6f17f231_entrevista2-transcode.mp4" type="video/mp4">
+                <source src="https://assets-global.website-files.com/65a2dfaab57dbdb133620e75/65a346626841a21a6f17f231_entrevista2-transcode.webm" type="video/webm">
+                Seu navegador não suporta vídeos.
+            </video>
+            
+            <a href="https://bythomaz.substack.com/" class="thought-button">What's in my mind</a>
+        </div>
+        <div class="content-container">
+            <div class="top-content">
+                <div class="current">
+                    <h2>Current</h2>
+                    <p>I'm a PM at Alinea Health.</p>
+                    <p>We radically reduce healthcare costs for companies while improving health quality for employees.</p>
+                    <p>Backed by Founders Fund and General Catalyst</p>
+                </div>
+                <div class="principles">
+                    <h2>Principles for 2024</h2>
+                        <p>Optimize for crystal clear thinking. (Doug Leone)</p>
+                        <p>Raise the bar. All the brilliant creations were made up by people no smarter than me. (Steve Jobs)</p>
+                        <p>Predictable delusional self-belief (Sam Altman)</p>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <h2>Past Work</h2>
+                <ul class="past-work">
+                    <li>
+                        <img src="https://assets-global.website-files.com/65a2dfaab57dbdb133620e75/65a2fd79386959a709284cad_WhatsApp%20Image%202024-01-13%20at%2018.15.16.jpeg" alt="Gen Mafia Icon">
+                        <span><a href="#">Gen Mafia:</a> building a community of the best young builders from 🇧🇷 | YC founders, VCs, engineers, designers. (2023 - Present)</span>
+                    </li>
+                    <li>
+                        <img src="https://assets-global.website-files.com/65a2dfaab57dbdb133620e75/65a336c17eb6560d92f175e2_alinea_health_logo.jpeg" alt="Alinea Icon">
+                        <span><a href="#">Alinea:</a> launching B2C products | Meaningful work, billion-dollar problem & unique culture. (2023 - Present)</span>
+                    </li>
+                    <li>
+                        <img src="https://assets-global.website-files.com/65a2dfaab57dbdb133620e75/65a33eacbb221c165dc57525_download.jpeg" alt="Addi Icon">
+                        <span><a href="#">Addi:</a> Affirm for LatAm | Talent density & generational CEO | Data + talk to customer all day to boost GMV (2023 - 2023)</span>
+                    </li>
+                    <li>
+                        <img src="https://assets-global.website-files.com/65a2dfaab57dbdb133620e75/65a36b07b52f089cc1c83b2b_saasholic_logo.jpeg" alt="SaaSholic Icon">
+                        <span><a href="#">SaaSholic:</a> Early stage VC -> 150k-$500k checks | #1 employee | Screened +500 startups I Left to go build something. (2022 - 2023)</span>
+                    </li>
+                    <li>
+                        <img src="https://assets-global.website-files.com/65a2dfaab57dbdb133620e75/65a2f9ffeddfb1bee9321004_qual_a_boa_logo.jpeg" alt="Qual a Boa Icon">
+                        <span><a href="#">Qual a Boa:</a> co-founded a marketplace for party tickets in college | Epic fail | 10k users ($0 mkt), $100k in GMV. (2021 - 2022)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
